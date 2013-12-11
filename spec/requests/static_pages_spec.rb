@@ -21,4 +21,10 @@ describe "Static Pages" do
     	end                                                                                               
   end
 
+  describe "Contact Page" do
+	it "Should have the Content 'Content'" do
+		visit '/static_pages/content'
+		expect(page).to have_title('Content')
+	end
+  end
 end
